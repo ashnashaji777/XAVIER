@@ -1,0 +1,166 @@
+/* Styling for the Placements Section */
+.placements-section {
+    background-color: hsl(0, 0%, 100%); /* White background */
+    padding: 40px; /* Padding around the section */
+  }
+  
+  .placements-content {
+    width: 90%; /* Content width */
+    margin-left: 0; /* Align to the left */
+    padding: 10px;
+  }
+  
+  /* Heading Style */
+  .heading {
+    color: #1e3a8a; /* Blue color for the heading */
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: left; /* Align the heading to the left */
+  }
+  
+  /* Subheading Style */
+  .sub-heading {
+    color: #d9af06; /* Yellow color for the subheading */
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Content Text Style */
+  .content {
+    color: #000; /* Black color for the content */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space between paragraphs */
+    text-align: left; /* Align the content text to the left */
+  }
+  
+  /* Objectives List */
+  .objectives-list {
+    list-style: none; /* Remove default bullet points */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two columns */
+    gap: 10px 10px; /* Add spacing between items */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .objectives-list li {
+    position: relative;
+    padding-left: 25px; /* Space for the custom bullet */
+    font-size: 18px;
+    color: #000; /* Black color for text */
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  /* Custom Bullet Icon */
+  .objectives-list li::before {
+    content: "•"; /* Bullet symbol */
+    position: absolute;
+    left: 0; /* Align bullet on the left */
+    color: #1e3a8a; /* Blue color for the bullet */
+    font-size: 24px; /* Bullet size */
+  }
+  
+  /* Training Cell Section */
+.training-cell-section {
+    background-color: #fff; /* White background for the section */
+    padding: 40px; /* Padding around the section */
+    margin-top: 40px; /* Space above the section */
+  }
+  
+  /* Heading Style */
+  .training-heading {
+    color: #1e3a8a; /* Blue color for the heading */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: left;
+  }
+  
+  /* Description Paragraph Style */
+  .training-description {
+    color: #000; /* Black color for the paragraph */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space below the paragraph */
+    text-align: left;
+  }
+  
+  /* Training Cell Section */
+/* Training Cell Section */
+.training-cell-section {
+    background-color: #fff; /* White background */
+    padding: 40px; /* Padding for spacing */
+    margin-top: 40px; /* Space above the section */
+    text-align: left; /* Align all content to the left */
+  }
+  
+  /* Heading Style */
+  .training-heading {
+    color: #1e3a8a; /* Blue color for heading */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Space below the heading */
+  }
+  
+  /* Description Paragraph Style */
+  .training-description {
+    color: #000; /* Black text color */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  /* Training List Style */
+  .training-list {
+    columns: 2; /* Divide the list into two columns */
+    column-gap: 40px; /* Space between columns */
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Training List Items */
+  .training-list li {
+    position: relative;
+    padding-left: 30px; /* Space for custom bullet */
+    font-size: 18px;
+    color: #000; /* Black text */
+    line-height: 1.8; /* Increase line spacing */
+    margin-bottom: 10px; /* Space between list items */
+  }
+  
+  /* Custom Bullet Style */
+  .training-list li::before {
+    content: "•"; /* Custom bullet */
+    position: absolute;
+    left: 0; /* Align bullet to the left */
+    color: #1e3a8a; /* Blue bullet color */
+    font-size: 24px; /* Bullet size */
+  }
+/* Primary Objectives Section */
+.primary-objectives {
+    margin-top: 40px; /* Add space above the section */
+  }
+  
+  .primary-objectives-heading {
+    color: #d9af06; /* Yellow color for heading */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: left;
+  }
+  
+  .primary-objectives-text {
+    color: #000; /* Black text color */
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left; /* Ensure text is left-aligned */
+    margin-bottom: 20px; /* Add space below the paragraph */
+  }
+    

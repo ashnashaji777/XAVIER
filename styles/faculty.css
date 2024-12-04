@@ -1,0 +1,241 @@
+.white-section {
+    background-color: #fff; /* White background for section */
+    padding: 20px;
+  }
+  
+  .content-wrapper {
+    max-width: 1000px; /* Limits the width for readability */
+    margin: 0 auto; /* Centers the content */
+  }
+  
+  .text-container h1 {
+    color: #0074D9; /* Blue color for h1 */
+    font-size: 28px; /* Adjust font size */
+    margin-bottom: 10px;
+    text-align: left; /* Align to left */
+  }
+  
+  .text-container h2 {
+    color: #FFC107; /* Yellow color for h2 */
+    font-size: 22px; /* Adjust font size */
+    margin-bottom: 15px;
+    text-align: left; /* Align to left */
+  }
+  
+  .text-container p {
+    color: #000; /* Black color for text */
+    font-size: 16px; /* Standard font size */
+    line-height: 1.6; /* Improves readability */
+    text-align: left; /* Align text to left */
+    margin: 0; /* Remove default margin */
+  }
+  .academic-mentors {
+    background-color: #fff; /* White background */
+    padding: 40px 20px; /* Space around the section */
+    text-align: center; /* Center-align the heading */
+  }
+  
+  .academic-mentors h1 {
+    color: #0074D9; /* Blue color for heading */
+    font-size: 28px; /* Adjust font size */
+    margin-bottom: 30px; /* Space below the heading */
+  }
+  
+  .mentors-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: center; /* Centers the mentor boxes */
+    gap: 20px; /* Space between boxes */
+  }
+  
+  .mentor-box {
+    background-color: #fff; /* White box */
+    border: 2px solid #FFC107; /* Yellow border */
+    border-radius: 10px; /* Rounded corners */
+    width: 250px; /* Fixed width for each box */
+    padding: 20px; /* Space inside the box */
+    text-align: center; /* Center content inside box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  }
+  
+  .mentor-box:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mentor-img {
+    width: 100%; /* Full width of the container */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    border-radius: 5px; /* Slightly rounded image */
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  .mentor-name {
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    color: #000; /* Black text color */
+    margin-bottom: 5px; /* Space below the name */
+  }
+  
+  .mentor-place {
+    font-size: 14px; /* Adjust font size */
+    color: #666; /* Gray text color for location */
+  }
+  
+  .faculty-section {
+    background-color: #fff; /* White background */
+    padding: 40px 20px; /* Space around the section */
+    text-align: center; /* Center-align the heading */
+  }
+  
+  .faculty-section h1 {
+    color: #0074D9; /* Blue color for heading */
+    font-size: 28px; /* Adjust font size */
+    margin-bottom: 30px; /* Space below the heading */
+  }
+  
+  .faculty-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+    gap: 20px; /* Space between boxes */
+    justify-items: center; /* Center-align the boxes */
+  }
+  
+  .faculty-box {
+    background-color: #fff; /* White box */
+    border: 1px solid #ddd; /* Light border around the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 250px; /* Fixed width for boxes */
+    padding: 20px; /* Space inside the box */
+    text-align: center; /* Center content inside box */
+    position: relative; /* For positioning elements */
+  }
+  
+  .faculty-header {
+    background-color: #074276; /* Blue border at the top */
+    height: 5px; /* Height of the top border */
+    width: 100%; /* Full width of the box */
+    position: absolute; /* Positioned at the top */
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px; /* Rounded corners for the border */
+    border-top-right-radius: 8px;
+  }
+  
+  .faculty-img {
+    width: 100px; /* Fixed width for images */
+    height: 100px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    margin-top: 20px; /* Space below the top border */
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  .faculty-name {
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    color: #000; /* Black text color */
+    margin-bottom: 5px; /* Space below the name */
+  }
+  
+  .faculty-qualification {
+    font-size: 14px; /* Adjust font size */
+    color: #666; /* Gray text color for qualification */
+    margin-bottom: 20px; /* Space below the qualification */
+  }
+  
+  .know-more-btn {
+    background-color: #0074D9; /* Blue button background */
+    color: #fff; /* White text color */
+    font-size: 14px; /* Adjust font size */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Make text uppercase */
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  .know-more-btn:hover {
+    background-color: #0056a3; /* Darker blue on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .faculty-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .faculty-container {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  
+  .experts-section {
+    background-color: #fff; /* White background */
+    padding: 40px 20px; /* Space around the section */
+    text-align: center; /* Center-align the heading */
+  }
+  
+  .experts-section h1 {
+    color: #0056a3; /* Yellow color for heading */
+    font-size: 28px; /* Adjust font size */
+    margin-bottom: 30px; /* Space below the heading */
+  }
+  
+  .experts-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+    gap: 20px; /* Space between boxes */
+    justify-items: center; /* Center-align the boxes */
+  }
+  
+  .expert-box {
+    background-color: #fff; /* White box */
+    border: 2px solid #d9af06e6; /* Yellow border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 220px; /* Fixed width for boxes */
+    padding: 20px; /* Space inside the box */
+    text-align: center; /* Center content inside box */
+  }
+  
+  .expert-img {
+    width: 100px; /* Fixed width for images */
+    height: 100px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  .expert-name {
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    color: #000; /* Black text color */
+    margin-bottom: 5px; /* Space below the name */
+  }
+  
+  .expert-qualification {
+    font-size: 14px; /* Adjust font size */
+    color: #666; /* Gray text color for qualification */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .experts-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .experts-container {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  
+ 
