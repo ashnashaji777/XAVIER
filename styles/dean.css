@@ -1,0 +1,15 @@
+.image-container {
+    display: flex;
+    justify-content: flex-start; /* Align the image to the left */
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  .profile-image {
+    width: 45px; /* Passport-size width */
+    height: 60px; /* Passport-size height */
+    object-fit: cover; /* Ensure the image fits nicely */
+    border-radius: 10%; /* Slightly rounded corners for passport style */
+    border: 2px solid #ccc; /* Optional: Add a border around the image */
+    margin-right: 15px; /* Space between the image and text */
+  }
+  

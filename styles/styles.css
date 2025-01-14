@@ -1,0 +1,1139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-bar .social-links {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically aligns the icons */
+    gap: 10px; /* Adds space between icons */
+    margin-top: 20px;
+}
+
+.top-bar .social-links img {
+    width: 20px;
+    height: 20px;
+    margin: 0; /* Removes extra margins */
+}
+
+
+.animated-link {
+    color: darkblue; /* Sets the link color to dark blue */
+    font-weight: bold; /* Ensures the text appears bold */
+    text-decoration: none; /* Removes underline */
+    position: relative; /* Enables pseudo-element positioning */
+}
+
+.animated-link::after {
+    content: ''; /* Adds the circular effect */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border: 2px solid yellow; /* Yellow circular border */
+    border-radius: 50%; /* Makes it a circle */
+    transform: translate(-50%, -50%);
+    animation: yellow-circle 1.5s infinite ease-in-out; /* Animates the circle */
+    z-index: -1; /* Ensures the circle is behind the link */
+}
+
+@keyframes yellow-circle {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.8;
+    }
+    50% {
+        width: 50px;
+        height: 50px;
+        opacity: 0.2;
+    }
+    100% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+
+.top-bar .secondary-links {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.top-bar .secondary-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.top-bar .secondary-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Header */
+header {
+    background-color: #f5c100;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/images/hero-bg.jpg') no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero .btn {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+#welcome {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center;
+}
+
+#welcome .container {
+    max-width: 1200px; /* Limit the width */
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+}
+
+#welcome h1 {
+    font-size: 2.5rem; /* Large and bold heading */
+    color: #002147; /* Xavier's blue color */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#welcome p {
+    font-size: 1rem; /* Standard readable font size */
+    color: #333; /* Dark text for readability */
+    line-height: 1.8; /* Increase line spacing for readability */
+    margin-bottom: 20px;
+}
+
+#welcome p:last-child {
+    margin-bottom: 0; /* Remove margin for the last paragraph */
+}
+/* Know More Button */
+.btn-know-more {
+    display: inline-block; /* Makes the button block-like */
+    background-color: #002147; /* Xavier's blue color */
+    color: #fff; /* White text */
+    font-size: 1rem; /* Standard font size */
+    padding: 10px 20px; /* Padding for button size */
+    margin-top: 20px; /* Space between the button and content */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Slightly rounded corners */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Button */
+.btn-know-more:hover {
+    background-color: #0056b3; /* Lighter blue on hover */
+}
+/* Yellow Box Section */
+#reasons .yellow-box {
+    background-color: #f3de1f; /* Bright yellow background */
+    padding: 30px; /* Padding for content spacing */
+    margin: 20px auto; /* Center the box and add space around it */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    max-width: 1500px; /* Limit the width of the box */
+    text-align: center; /* Center align the content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading in Blue */
+#reasons .yellow-box h2 {
+    color: #0f519b; /* Blue color for the heading */
+    font-size: 1.8rem; /* Slightly larger font size */
+    margin-bottom: 15px; /* Space below the heading */
+    font-weight: bold; /* Bold text */
+}
+
+/* Text in Black */
+#reasons .yellow-box p {
+    color: #030000e3; /* Black text */
+    font-size: 1rem; /* Standard font size */
+    line-height: 1.6; /* Better readability */
+}
+/* Container for Small Boxes */
+.small-box-container {
+    display: flex; /* Align boxes in a row */
+    justify-content: space-around; /* Evenly space out the boxes */
+    margin-top: 20px; /* Space above the boxes */
+}
+
+/* Individual Small Box */
+.small-box {
+    background-color: #fff; /* White background */
+    color: #002147; /* Blue text for contrast */
+    padding: 15px; /* Internal spacing */
+    width: 25%; /* Box width */
+    text-align: center; /* Center content inside */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-weight: bold; /* Bold text inside boxes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Boxes */
+.small-box:hover {
+    transform: translateY(-5px); /* Lift the box on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+/* Container for Small Boxes */
+.small-box-container {
+    display: flex; /* Align boxes in a row */
+    justify-content: space-around; /* Evenly space out the boxes */
+    margin-top: 20px; /* Space above the boxes */
+}
+
+/* Individual Small Box */
+.small-box {
+    background-color: #fff; /* White background */
+    color: #333; /* Black text for content */
+    padding: 15px; /* Internal spacing */
+    width: 25%; /* Box width */
+    text-align: center; /* Center content inside */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-weight: normal; /* Regular text weight for content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Heading in Blue */
+.small-box h3 {
+    color: #002147; /* Blue color for the heading */
+    font-size: 1.2rem; /* Slightly larger font size */
+    margin-bottom: 10px; /* Space below the heading */
+    font-weight: bold; /* Bold text for headings */
+}
+
+/* Text in Black */
+.small-box p {
+    color: #333; /* Black text for paragraph content */
+    font-size: 1rem; /* Standard font size */
+    line-height: 1.6; /* Better readability */
+}
+
+/* Hover Effect for Boxes */
+.small-box:hover {
+    transform: translateY(-5px); /* Lift the box on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+/* Icon Styling */
+.icon {
+    width: 50px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between icon and heading */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Light Blue Section Styling */
+.light-blue-section {
+    background-color: #d9f0fc; /* Light blue shade */
+    text-align: center; /* Center align the text */
+    padding: 50px 20px; /* Add spacing for aesthetics */
+}
+
+.light-blue-section h2 {
+    color: #0056b3; /* Blue color for heading */
+    font-size: 2rem; /* Adjust heading size */
+    margin-bottom: 20px; /* Space between heading and paragraph */
+}
+
+.light-blue-section p {
+    color: #000; /* Black color for paragraph */
+    font-size: 1.2rem; /* Adjust paragraph size */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center align text block */
+    line-height: 1.6; /* Improve readability with line spacing */
+}
+/* Tabs Section Styling */
+/* Light blue section styling */
+/* Section styling */
+/* Section Styling */
+.tabs-section {
+    background-color: #e3f2fd; /* Light blue shade */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Heading and description styling */
+.program-heading {
+    color: #007bff; /* Blue heading color */
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.program-description {
+    color: #000; /* Black text */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Tabs container styling */
+.tabs {
+    margin-top: 20px;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.tab-button:hover {
+    text-decoration: underline;
+}
+
+.tab-button.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Programs container styling */
+.programs-container {
+    display: flex;
+    flex-wrap: wrap; /* This will allow wrapping of program cards */
+    justify-content: center;
+    gap: 20px; /* Spacing between cards */
+    margin-top: 20px;
+}
+
+/* Program card styling */
+.program-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 35%; /* Adjusted to allow 2 cards per row */
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.program-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.program-card h3 {
+    font-size: 18px;
+    color: #003366; /* Dark blue color */
+    margin: 10px 0;
+}
+
+.program-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.program-card button {
+    background-color: #f0ad4e; /* Gold button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.program-card button:hover {
+    background-color: #d68c2b; /* Darker gold */
+}
+
+/* Responsive Design: For smaller screens */
+@media (max-width: 768px) {
+    .program-card {
+        width: 90%; /* Cards take full width on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .program-card {
+        width: 100%; /* Cards take full width on extra small screens */
+    }
+}
+
+/* Yellow Section Styling */
+/* Yellow Section Styling */
+.yellow-section {
+    background-color:  #f3de1f; /* Yellow background */
+    padding: 40px 20px;
+    text-align: center; /* Center-align text */
+}
+
+/* Title Styling */
+.section-title {
+    color: #007bff; /* Blue title */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Description Styling */
+.section-description {
+    color: #000; /* Black description text */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Image container styling */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Image row styling */
+.image-row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Image styling */
+.image-row a {
+    display: block;
+    width: 45%; /* Each image takes up half the width of the row */
+}
+
+.image-row img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.image-row img:hover {
+    transform: scale(1.05);
+}
+
+/* Light Blue Section Styling */
+.light-blue-section {
+    background-color: #e3f2fd; /* Light blue background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Title Styling */
+/* Light Blue Section Styling */
+.light-blue-section {
+    background-color: #e3f2fd; /* Light blue background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Title Styling */
+.section-title {
+    color: #007bff; /* Blue title */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Blog Container Styling */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    animation: scrollBlogs 10s ease-in-out infinite;
+}
+
+/* Individual Blog Box Styling */
+.blog-box {
+    width: 250px; /* Width for each blog box */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    transform: translateX(100%); /* Initial position off-screen */
+    animation: slideIn 10s ease-in-out infinite;
+}
+
+/* Image Styling */
+.blog-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Tagline Styling */
+.tagline {
+    padding: 10px;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #f0f8ff;
+    margin: 0;
+}
+
+/* Read More Button Styling */
+.read-more {
+    background-color: #d0a90f; /* Blue button */
+    color: #0b0900f3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.read-more:hover {
+    background-color: #d0a90f; /* Darker blue on hover */
+}
+
+/* Animation for Blog Box Sliding */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+    }
+    25% {
+        transform: translateX(0); /* Move to the original position */
+    }
+    50% {
+        transform: translateX(-100%); /* Move to the left */
+    }
+    75% {
+        transform: translateX(0); /* Return to the original position */
+    }
+    100% {
+        transform: translateX(100%); /* Move out to the right again */
+    }
+}
+
+
+
+/* White background section for top recruiters */
+/* White background section for top recruiters */
+/* White background section for top recruiters */
+.top-recruiters-section {
+    background-color: #fff; /* White background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Section title */
+.section-title {
+    color: #007bff; /* Blue title */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Logos container */
+.recruiter-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Individual logo container */
+.logo-container {
+    width: 90px; /* Small circle size */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Circle shape */
+    overflow: hidden;
+    border: 2px solid #003366; /* Dark blue border */
+}
+
+/* Styling the logos */
+.recruiter-logo {
+    width: 70%; /* Adjust logo size inside the circle */
+    height: 70%;
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make logos circular */
+    transition: transform 0.3s ease;
+}
+
+/* Optional hover effect for logos */
+.recruiter-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+/* Reviews Section */
+.reviews-section {
+    background-color: #ffeb3b; /* Yellow background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section-title {
+    color: #003366; /* Dark blue title */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.section-review title {
+    color: rgb(251, 253, 254); /* Dark blue title */
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Review Wrapper */
+.review-card-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+/* Review Card */
+.review-card {
+    min-width: 100%;
+    text-align: center;
+}
+
+.student-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #eca409; /* Dark blue border */
+    
+}
+
+.student-review {
+    font-size: 1rem;
+    color: #1d0000e3;
+    margin-bottom: 10px;
+}
+
+.student-name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #003366;
+    text-align: left;
+}
+
+/* Carousel Arrows */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+
+
+/* General Footer Styles */
+footer {
+    background-color: #eca409; /* Light yellow background */
+    color: #000; /* Black text color */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  footer h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 8px;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: #000; /* Black links */
+    transition: color 0.3s;
+  }
+  
+  footer ul li a:hover {
+    color: #0056b3; /* Change to blue on hover */
+  }
+  
+  /* Flexbox for layout */
+  footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  footer .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  footer .logo-section img {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  /* Social Media Icons */
+  footer .social-icons a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  footer .social-icons a:hover {
+    color: #01060b; /* Change to blue on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    footer .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer .footer-section {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  
+    footer .social-icons {
+      margin-top: 10px;
+      color: #000;
+    }
+  }
+  /* Navigation Styling */
+/* Navigation Styling */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 15px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #2262c1;
+}
+
+/* Dropdown Menu Styling */
+nav ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style-type: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  min-width: 300px;
+  z-index: 1000;
+}
+
+nav ul li .dropdown-menu li {
+  margin: 0;
+}
+
+nav ul li .dropdown-menu li a {
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: lighter;
+  text-align: left;
+  font-size: small;
+
+}
+
+nav ul li .dropdown-menu li a:hover {
+  background-color: #f4f0ea;
+  color: #1d65c3;
+}
+
+/* Dropdown Headings */
+nav ul li .dropdown-menu .dropdown-heading {
+  font-weight: bold;
+  color: #333;
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  text-align: left;
+}
+
+/* Show Dropdown on Hover */
+nav ul li:hover .dropdown-menu {
+  display: block;
+}
+
+
+.about-us-text {
+    color: black; /* Makes the text color black */
+    font-size: 16px; /* Adjust font size if needed */
+    font-weight: bold; /* Optional: Make the text bold */
+  }
+ 
+
+  
+
+  /* Reset and Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* General Layout */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #edc00f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer {
+    background: #e5c304;
+    color: rgb(10, 9, 9);
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: auto;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 1rem;
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive Grid */
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background: #edc00f;
+    color: white;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  /* Button Styling */
+  button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background: #005bb5;
+  }
+  
+  /* Form Elements */
+  
+  
+  /* Responsive Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Media Queries for Small Screens */
+  @media (max-width: 767px) {
+    header, footer {
+      text-align: center;
+      padding: 0.5rem;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav a {
+      padding: 0.5rem;
+      display: block;
+      text-align: center;
+    }
+  
+    form {
+      width: 100%;
+    }
+  }
+  
+
+
+  .whatsapp-icon {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    left: 20px; /* Distance from the right of the viewport */
+    z-index: 1000; /* Keeps it above other elements */
+    width: 60px; /* Icon width */
+    height: 60px; /* Icon height */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+.whatsapp-icon img {
+    width: 100%; /* Ensures the image fills the icon container */
+    height: 100%; /* Maintains aspect ratio */
+    border-radius: 50%; /* Makes the icon circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+}
+
+.whatsapp-icon:hover img {
+    transform: scale(1.1); /* Optional: Adds a hover effect */
+    transition: transform 0.2s ease; /* Smooth animation */
+}
+
+
+  /* Enquiry box styling */
+  .enquiry-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(229, 189, 11);
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 300px;
+    display: none; /* Hidden by default */
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Form elements */
+.enquiry-box input,
+.enquiry-box textarea {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.enquiry-box button {
+    display: block;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.enquiry-box button:hover {
+    background-color: darkblue;
+}

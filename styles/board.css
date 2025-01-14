@@ -1,0 +1,53 @@
+/* Scope the styles to the table section using .table-section */
+.table-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+.table-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table-section .section-heading {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.table-section .advisory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.table-section .advisory-table th,
+.table-section .advisory-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Header row styles */
+.table-section .advisory-table thead tr {
+    background-color: #032d59; /* Blue background */
+}
+
+.table-section .advisory-table th {
+    color: #f5ca1f; /* Yellow text */
+    font-weight: bold;
+}
+
+/* Alternating row colors */
+.table-section .advisory-table tbody tr:nth-child(odd) {
+    background-color: #eba3d3; /* Rose color */
+}
+
+.table-section .advisory-table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White color */
+}
+
+.table-section .advisory-table tbody tr td {
+    color: #333; /* Regular text color */
+}

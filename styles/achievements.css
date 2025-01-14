@@ -1,0 +1,34 @@
+.certificate-section {
+    background-color: #fff; /* White background */
+    padding: 40px 20px; /* Space around the section */
+    text-align: center; /* Center-align the content */
+  }
+  
+  
+  .certificate-container {
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: center; /* Center the certificates */
+    gap: 20px; /* Space between the images */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .certificate-img {
+    width: 1000px; /* Fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional: Slightly rounded corners */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .certificate-img {
+      width: 250px; /* Reduce size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .certificate-container {
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center-align the images */
+    }
+  }
+  

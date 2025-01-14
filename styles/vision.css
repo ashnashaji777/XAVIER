@@ -1,0 +1,34 @@
+.yellow-section {
+    background-color: yellow; /* Yellow background for the section */
+    padding: 20px; /* Padding inside the section */
+    border-top: 20px solid white; /* White border at the top */
+    border-bottom: 20px solid white; /* White border at the bottom */
+  }
+  
+  .mission-boxes {
+    display: flex; /* Display the boxes side by side */
+    justify-content: space-between; /* Space them equally */
+    gap: 20px; /* Gap between the boxes */
+  }
+  
+  .mission-box {
+    background-color: white; /* White background for the boxes */
+    border: 2px solid blue; /* Blue border around the boxes */
+    padding: 20px; /* Padding inside the boxes */
+    flex: 1; /* Make each box take equal space */
+  }
+  
+  .mission-box h3 {
+    color: blue; /* Blue color for the heading */
+    font-size: 1.5rem; /* Adjust heading size */
+    margin-bottom: 15px; /* Space between heading and paragraph */
+    text-align: left;
+  }
+  
+  .mission-box p {
+    color: #333; /* Default text color */
+    font-size: 1rem; /* Font size for the text */
+    line-height: 1.6; /* Line height for readability */
+    text-align: left;
+  }
+  
